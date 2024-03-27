@@ -1,0 +1,89 @@
+
+
+body {
+    width: 1200px;
+    margin: auto;
+}
+
+p {
+    font-size: 30px;
+    color: red;
+}
+
+#hover {
+    margin: 100px 500px;
+    font-size: 4rem;
+}
+
+#hover:hover {
+    color: #777;
+    font-size: 6rem;
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+#lastpost {
+    color: blue;
+    padding-bottom: 300px;
+}
+
+a {
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+li {
+    font-size: 26px;
+}
+
+table {
+    margin: 200px 400px;
+    border: 1px solid black
+}
+
+td {
+    border: 1px solid red;
+}
+
+td:nth-child(3) {
+    background-color: aqua;
+}
+
+.bg-color {
+    background-color: blue;
+    color: white;
+}
+
+.upper-roman {
+    list-style-type: upper-roman;
+    counter-reset: first;
+}
+
+.upper-roman li::before {
+    counter-increment: first;
+    content: counter(first) ". ";
+} 
+
+.lower-latin {
+    list-style-type: lower-latin;
+    counter-reset: second;
+}
+
+.lower-latin li::before {
+    counter-increment: second;
+    content: counter(second) ". ";
+}
+
+.custom-list {
+    counter-reset: third;
+}
+
+.test::before {
+    counter-increment: third;
+    content: "Part " counter(third) ": ";
+}
